@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tonmoy's E-Commerce</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header class="bg-blue-900 text-white">
+    <div class="top-bar text-center py-2">
+      <p>Welcome to Tonmoy's Shop! Free Shipping on orders over $50.</p>
+    </div>
+    <nav class="navbar flex justify-between items-center px-6 py-4 bg-blue-800">
+      <div class="logo">
+        <img src="image/7.jpg" alt="Logo" class="w-16">
+      </div>
+      <ul class="nav-links flex gap-6 text-white">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#login" id="login">Login</a></li>
+        <li><a href="#cart" class="cart">Cart (0)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="header-slider bg-gray-100 p-6">
+      <h1 class="text-center text-2xl font-bold mb-4">Explore Our Latest Products</h1>
+      <div class="slider flex overflow-hidden">
+        <img src="image/mockup white t-shirt-Front.jpg" alt="T-Shirt" class="slider-img w-full">
+        <img src="image/333.jpg" alt="Cap" class="slider-img w-full hidden">
+        <img src="image/sunglasses.jpg" alt="Glasses" class="slider-img w-full hidden">
+      </div>
+    </section>
+
+    <section id="products" class="products py-10 bg-white">
+      <h2 class="text-center text-xl font-bold mb-6">Our Products</h2>
+      <div class="product-list flex flex-wrap gap-6 justify-center">
+        <!-- Example Product Card -->
+        <div class="product p-4 border shadow-md rounded-md w-64 bg-white text-center">
+          <img src="image/mockup white t-shirt-Front.jpg" alt="T-Shirt" class="w-full mb-4">
+          <h3 class="font-bold">T-Shirt</h3>
+          <p class="text-gray-600">$15.00</p>
+          <button class="btn btn-active btn-ghost add-to-cart">Add to Cart</button>
+          <button class="btn btn-success buy-now">Buy Now</button>
+        </div>
+        <div class="product p-4 border shadow-md rounded-md w-64 bg-white text-center">
+            <img src="image/333.jpg" alt="Cap" class="w-full mb-4">
+            <h3 class="font-bold">Cap</h3>
+            <p class="text-gray-600">$10.00</p>
+            <button class="btn btn-active btn-ghost add-to-cart">Add to Cart</button>
+            <button class="btn btn-success buy-now">Buy Now</button>
+          </div>
+          <div class="product p-4 border shadow-md rounded-md w-64 bg-white text-center">
+            <img src="image/sunglasses.jpg" alt="sunglasses" class="w-full mb-4">
+            <h3 class="font-bold">Sunglass</h3>
+            <p class="text-gray-600">$5.00</p>
+            <button class="btn btn-active btn-ghost add-to-cart">Add to Cart</button>
+            <button class="btn btn-success buy-now">Buy Now</button>
+          </div>
+        <!-- Add more products as needed -->
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews bg-gray-50 py-10">
+      <h2 class="text-center text-xl font-bold mb-4">Customer Reviews</h2>
+      <div id="review-section" class="review-section text-center">
+        <!-- Reviews will appear here -->
+      </div>
+      <div class="flex flex-col items-center mt-4">
+        <textarea id="review-input" class="border p-2 rounded-md w-2/3" placeholder="Write your review..."></textarea>
+        <button id="submit-review" class="btn btn-primary mt-2">Submit Review</button>
+      </div>
+    </section>
+
+    <section id="contact" class="contact bg-white py-10">
+      <h2 class="text-center text-xl font-bold mb-4">Contact Us</h2>
+      <form action="mailto:md.rezauddin2002@gmail.com" method="post" enctype="text/plain" class="max-w-xl mx-auto">
+        <input type="text" name="name" placeholder="Your Name" class="border p-2 w-full mb-4 rounded-md" required>
+        <input type="email" name="email" placeholder="Your Email" class="border p-2 w-full mb-4 rounded-md" required>
+        <textarea name="message" placeholder="Your Message" class="border p-2 w-full mb-4 rounded-md" required></textarea>
+        <button type="submit" class="btn btn-primary w-full">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-blue-900 text-white text-center py-4">
+    <p>© 2024 Mohammad Reza Uddin Tonmoy. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
